@@ -1,0 +1,51 @@
+Patching procedure
+==================
+1.change create and need to approve.---->(if the server is production)
+
+2.need to pre-checks
+*uptime
+df -h
+uname -r
+cat /etc/fstab
+ifconfig
+lsblk
+netstat -nr
+cat /etc/os-release or cat /etc/redhat-release
+other cmds
+
+3.snapshot should be take.(VM)
+   backup need to take if it (physcial server)
+
+4.pre-validation
+  login to the server and check 
+df -h below threshold limit 75%
+yum repolist ---->no errors
+yum check-update --need to check if any updates available.
+
+5. Now during change window time need to start change and start the activity.
+
+#yum update  ---->to update the server.
+
+6.reboot
+7.post checks  (repat the step 2) and very the outputs.
+8.handover the server to the owners.
+==============================END================================================
+
+
+
+rhel6/centos
+2.6.22xx
+rhel7
+3.10
+rhel 8
+4.18
+
+
+bigfix
+AWX
+tanium
+satilate (subcription)
+scripts
+
+
+
