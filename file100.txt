@@ -1,1 +1,2 @@
 hi  this is used for understanding the git clone and git fetch
+there rae many ways to follow the steps from one step to another
